@@ -1,0 +1,41 @@
+2024-03-18 15:31:08,196 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Nenhum Parâmetro.
+2024-03-18 15:31:39,010 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Nenhum Parâmetro.
+2024-03-18 15:32:01,065 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Nenhum Parâmetro.
+2024-03-18 15:32:43,764 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Nenhum Parâmetro.
+2024-03-18 15:32:43,768 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Parametro 1.694
+2024-03-18 15:32:44,400 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Arquivo: prjExperimento01/src/PrimeiroExperimento/Util.java
+2024-03-18 15:32:44,400 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Usuário: Carlos.Carbonera
+2024-03-18 15:32:44,400 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Conteúdo: package PrimeiroExperimento;
+
+public class Util {
+
+	public Util() {		
+	}
+	
+	public double arredondarValores()
+	{	
+		// IMPORTANTE
+		//  1o Passo - trocar aonde tem '@' pelo par metro inserido
+		//  2o Passo - Descomentar a linha do c lculo
+		//  3o Passo - Retornar a vari vel valorArrend e n o mais ZERO
+		//double valorArrend = Math.round(@ * 100.0) / 100.0;
+	    return 0;
+	    
+	}
+
+	public double arredondarValores00002()
+	{	
+		System.out.println("dfjdhfsdjkfhjksdfhjksdhfkjsdhsdjkhfkjsdcxzcxzcxcxzc");
+		
+	    return 00000;	    
+	    
+	    
+	}
+
+
+}
+
+2024-03-18 15:32:44,400 [main] INFO  com.dvl.promerge.hook.ProMergeHook - Revisão: 694
+2024-03-18 15:32:46,586 [Thread-1] ERROR com.dvl.core.util.AplicationUtils - Erro ao conectar no socket do servidor [192.168.0.156:9090] + Connection refused: connect
+2024-03-18 15:32:50,629 [Thread-1] ERROR com.dvl.core.util.AplicationUtils - Erro ao conectar no socket do servidor [192.168.0.156:9090] + Connection refused: connect
+2024-03-18 15:32:54,656 [Thread-1] ERROR com.dvl.core.util.AplicationUtils - Erro ao conectar no socket do servidor [192.168.0.156:9090] + Connection refused: connect

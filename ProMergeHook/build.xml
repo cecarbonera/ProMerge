@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<project default="dist" name="ProMergeHook">
+	
+	<property name="jar.name" value="ProMergeHook.jar"/>
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="build" />
+	<property name="dist.dir" value="build/dist" />
+	
+	<path id="classpath">
+		<fileset dir="../ProMergeCore">
+			<include name="**/*.jar" />
+			<include name="**/*.zip" />
+		</fileset>
+	</path>	
+	
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+	
+	<target name="init" depends="clean">
+		<echo>******************************</echo>
+		<echo>* ProMergeHook                  *</echo>
+		<echo>******************************</echo>
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${dist.dir}" />
+	</target>
+	
+	<target name="compile" depends="init">
+		<javac classpathref="classpath"
+				destdir="${build.dir}" 
+				encoding="ISO-8859-1"
+				debug="true" srcdir="${src.dir}">
+			<compilerarg value="-Xlint:unchecked"/>
+		</javac>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<jar destfile="${dist.dir}/${jar.name}">			
+			<fileset dir="${build.dir}">
+				<include name="**/*.class"/>
+			</fileset>
+			<fileset dir="${src.dir}">
+				<include name="**/*.java"/>
+			</fileset>
+		</jar>
+	</target>
+	
+	<target name="dist" depends="jar">
+		<copy todir="${build.dir}/lib">
+			<fileset dir="${dist.dir}">
+				<include name="**/*.jar"/>
+				<include name="**/*.zip"/>
+			</fileset>
+		</copy>
+	</target>
+	
+</project>

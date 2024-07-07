@@ -1,0 +1,80 @@
+2023-06-14 20:12:58,103 [main] INFO  com.dvl.promerge.server.ProMergeServer - Atualização da complexidade dos métodos...
+2023-06-14 20:12:58,410 [main] INFO  com.dvl.promerge.server.ProMergeServer - Atualização dos históricos dos métodos...
+2023-06-14 20:12:58,576 [main] INFO  com.dvl.promerge.server.ProMergeServer - Atualizações concluídas.
+2023-06-14 20:14:08,704 [main] INFO  com.dvl.core.util.AplicationUtils - XML ENVIADO VIA HOOK: <list>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>Funcionario</nomeMetodo>
+    <rangeInicial>7</rangeInicial>
+    <rangeFinal>29</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>getAnoContratacao</nomeMetodo>
+    <rangeInicial>30</rangeInicial>
+    <rangeFinal>33</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>setAnoContratacao</nomeMetodo>
+    <rangeInicial>34</rangeInicial>
+    <rangeFinal>37</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>getCargoExercido</nomeMetodo>
+    <rangeInicial>38</rangeInicial>
+    <rangeFinal>41</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>setCargoExercido</nomeMetodo>
+    <rangeInicial>42</rangeInicial>
+    <rangeFinal>44</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+</list>
+2023-06-14 20:24:26,105 [main] INFO  com.dvl.promerge.server.ProMergeServer - Atualização da complexidade dos métodos...
+2023-06-14 20:24:26,410 [main] INFO  com.dvl.promerge.server.ProMergeServer - Atualização dos históricos dos métodos...
+2023-06-14 20:24:26,566 [main] INFO  com.dvl.promerge.server.ProMergeServer - Atualizações concluídas.
+2023-06-14 20:25:33,943 [main] INFO  com.dvl.core.util.AplicationUtils - XML ENVIADO VIA HOOK: <list>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>Funcionario</nomeMetodo>
+    <rangeInicial>7</rangeInicial>
+    <rangeFinal>29</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>getAnoContratacao</nomeMetodo>
+    <rangeInicial>30</rangeInicial>
+    <rangeFinal>33</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>setAnoContratacao</nomeMetodo>
+    <rangeInicial>34</rangeInicial>
+    <rangeFinal>37</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>getCargoExercido</nomeMetodo>
+    <rangeInicial>38</rangeInicial>
+    <rangeFinal>41</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+  <com.dvl.core.vos.MetodosVO>
+    <nomeProjeto>prjExperimento01</nomeProjeto>
+    <nomeClasse>prjExperimento01\src\PrimeiroExperimento\Funcionario.java</nomeClasse>
+    <nomeMetodo>setCargoExercido</nomeMetodo>
+    <rangeInicial>42</rangeInicial>
+    <rangeFinal>44</rangeFinal>
+  </com.dvl.core.vos.MetodosVO>
+</list>

@@ -1,0 +1,20 @@
+package PrimeiroExperimento;
+
+public class Util {
+
+	public Util() {	
+		//       
+	}
+	
+	public double arredondarValores()
+	{	
+		// IMPORTANTE
+		//  1o Passo - trocar aonde tem '@' pelo parâmetro inserido
+		//  2o Passo - Descomentar a linha do cálculo
+		//  3o Passo - Retornar a variável valorArrend e não mais ZERO
+		//double valorArrend = Math.round(@ * 100.0) / 100.0;
+	    return 0;
+	    
+	}
+
+}

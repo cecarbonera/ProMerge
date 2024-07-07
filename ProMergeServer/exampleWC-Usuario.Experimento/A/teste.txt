@@ -1,0 +1,127 @@
+package PrimeiroExperimento;
+
+import java.util.ArrayList;
+
+public class Produtos {
+	// Propriedades
+	private int codigo;
+	private String descricao;
+	private String tipo;
+	private double precoUnit;
+	private int qtdEstoque;
+	private String liberadoVenda;
+
+	public Produtos() {
+		// Método construtor
+	}
+
+	public Produtos(int codigo, String descricao, String tipo,
+			double precoUnitProd, int qtdEstoque, String liberadoVenda) {
+		setCodProduto(codigo);
+		setDescrProduto(descricao);
+		setTipoProduto(tipo);
+		setPrecoUnitProd(precoUnitProd);
+		setQtdEstoque(qtdEstoque);
+		setLiberadoVenda(liberadoVenda);
+	}
+
+	public int getCodProduto() {
+		return codigo;
+	}
+
+	public void setCodProduto(int codProduto) {
+		this.codigo = codProduto;
+	}
+
+	public String getDescrProduto() {
+		return descricao;
+	}
+
+	public void setDescrProduto(String descrProduto) {
+		this.descricao = descrProduto;
+	}
+
+	public String getTipoProduto() {
+		return tipo;
+	}
+
+	public void setTipoProduto(String tipoProduto) {
+		this.tipo = tipoProduto;
+	}
+
+	public double getPrecoUnitProd() {
+		return precoUnit;
+	}
+
+	public void setPrecoUnitProd(double precoUnitProd) {
+		this.precoUnit = precoUnitProd;
+	}
+
+	public double getQtdEstoque() {
+		return qtdEstoque;
+	}
+
+	public void setQtdEstoque(int qtdEstoque) {
+		this.qtdEstoque = qtdEstoque;
+	}
+
+	public String getLiberadoVenda() {
+		return liberadoVenda;
+	}
+
+	public void setLiberadoVenda(String liberadoVenda) {
+		this.liberadoVenda = liberadoVenda;
+	}
+
+	public ArrayList<Produtos> listarProdutos() {
+		ArrayList<Produtos> produtos = new ArrayList<Produtos>();
+		Util _util = new Util();
+		
+		//Produtos Categoria A
+		produtos.add(new Produtos(1, "Tenis Adidas Nro 40", "A", _util.arredondarValores(120.547898787), 10,
+				"S"));
+		produtos.add(new Produtos(2, "Tenis Nike Nro 40", "A",  _util.arredondarValores(250.1054543), 15,
+				"S"));
+		produtos.add(new Produtos(3, "Tenis Mizuno Nro 40", "A",  _util.arredondarValores(315.121345543), 8,
+				"S"));
+
+		//Produtos Categoria B
+		produtos.add(new Produtos(4, "Tenis Asics Nro 40", "B",  _util.arredondarValores(199.99545454), 9,
+				"S"));
+		produtos.add(new Produtos(5, "Tenis Olympikus Nro 40", "B",  _util.arredondarValores(230.5454542),
+				15, "S"));
+		produtos.add(new Produtos(6, "Tenis Oakley Nro 40", "B",  _util.arredondarValores(375.24545454), 20,
+				"S"));
+		produtos.add(new Produtos(7, "Chinelo Adidas Nro 40", "B",  _util.arredondarValores(80.29844545),
+				10, "S"));
+		produtos.add(new Produtos(8, "Chinelo Nike Nro 40", "B",  _util.arredondarValores(82.1542545), 15,
+				"S"));
+		produtos.add(new Produtos(9, "Chinelo Mizuno Nro 40", "B",  _util.arredondarValores(83.14545377), 8,
+				"S"));
+		
+		//Produtos Categoria C
+		produtos.add(new Produtos(10, "Bola Futsal Nro 002", "C",  _util.arredondarValores(95.212323), 4,
+				"S"));
+		produtos.add(new Produtos(11, "Bola Futebol Campo Nro 001", "C",
+				230.4545445, 7, "S"));
+		produtos.add(new Produtos(12, "Bola Futebol Campo 002", "C",  _util.arredondarValores(180.4455854),
+				7, "S"));
+		produtos.add(new Produtos(13, "Chinelo Asics Nro 40", "C", 79.9872427, 9,
+				"S"));
+		
+		//Produtos Categoria D
+		produtos.add(new Produtos(14, "Chinelo Olympikus Nro 40", "D", 65.54554,
+				15, "S"));
+		produtos.add(new Produtos(15, "Chinelo Oakley Nro 40", "D", 78.2454554,
+				20, "S"));
+		produtos.add(new Produtos(16, "Bola Basquete Nro 001", "D", 122.25454255,
+				5, "S"));
+		produtos.add(new Produtos(17, "Bola Basquete Nro 002", "D", 135.23324432,
+				5, "S"));
+		produtos.add(new Produtos(18, "Bola Futsal Nro 001", "D", 98.2145422, 5,
+				"S"));
+
+		return produtos;
+	}
+
+}

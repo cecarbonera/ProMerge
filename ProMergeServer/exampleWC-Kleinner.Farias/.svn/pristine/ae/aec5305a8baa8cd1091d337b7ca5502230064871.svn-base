@@ -1,0 +1,89 @@
+package PrimeiroExperimento;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ExportarExcel {
+	public ExportarExcel() {
+		//
+		
+	}
+
+	public void readCsv(String filePath) {
+
+		BufferedReader reader = null;
+
+		try {
+			List<PedidosVenda> pedidos = new ArrayList<PedidosVenda>();
+			String line = "";
+			reader = new BufferedReader(new FileReader(filePath));
+			reader.readLine();
+
+			while ((line = reader.readLine()) != null) {
+				String[] fields = line.split(",");
+
+				if (fields.length > 0) {
+					PedidosVenda _pedido = new PedidosVenda();
+
+					_pedido.setCodPedido(Integer.parseInt(fields[0]));
+					_pedido.setDescricao(fields[1]);
+					_pedido.setCodVendedor(Integer.parseInt(fields[2]));
+					_pedido.setDataPedido(fields[3]);
+					_pedido.setValorPedido(Double.parseDouble(fields[4]));
+					_pedido.setStatus(fields[5]);
+
+				}
+			}
+
+			for (PedidosVenda u : pedidos) {
+				System.out
+						.printf("[Codigo=%i, Descricaos=%s, CodVendedor=%d, Data=%i], Valor=%s, Status=%s]\n",
+								u.getCodPedido(), u.getDescricao(),
+								u.getCodVendedor(), u.getDataPedido(),
+								u.getValorPedido(), u.getStatus());
+			}
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		} finally {
+			try {
+				reader.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+	}
+
+	public void writeCsv(String filePath, ArrayList<PedidosVenda> _pedidos) {
+		FileWriter fileWriter = null;
+
+		try {
+			fileWriter = new FileWriter(filePath);
+			fileWriter.append("Codigo, Descri��o, Cod Vendedor, Ststus\n");
+
+			for (PedidosVenda u : _pedidos) {
+				fileWriter.append(String.valueOf(u.getCodPedido()));
+				fileWriter.append(",");
+				fileWriter.append(String.valueOf(u.getDescricao()));
+				fileWriter.append(",");
+				fileWriter.append(String.valueOf(u.getCodVendedor()));
+				fileWriter.append(",");
+				fileWriter.append(String.valueOf(u.getStatus()));
+			}
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		} finally {
+			try {
+				fileWriter.flush();
+				fileWriter.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

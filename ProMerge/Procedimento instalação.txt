@@ -1,0 +1,5 @@
+1) Startar o ProMerge server
+2) Copiar eclipse nas máquinas
+2) Apontar IP do servidor nos workspaces
+3) Configurar arquivo de cada cliente
+4) Criar usuário no svn para cada um, o nome deste deverá ser o mesmo do workspace

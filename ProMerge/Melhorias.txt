@@ -1,0 +1,11 @@
+#1) Arquivo de configurações do workspace configurar manualmente sem pedir pro usuário
+#2) Startar processo eclipse em thread
+#3) Método do diff, criar pasta com o nome do usuário e 1 timestamp, para não dar problema
+#4) Remover pastas exampleRepository e exampleWC no final do processo diff
+????5) Alterar processo, status Conflito com erro de compilação e conflito sem erro de compilação
+#6) Testar processo de conflito indireto
+#7) Caracteres UTF8
+#8) Gerar executável do eclipse (Export -> Plugin Development -> Deployable plugins and fragments -> Copiar jar na pasta dropins do eclipse
+9) Opção de remover conflitos manualmente da janela
+10) Montar passo a passo para instalação
+11) Montar testes a serem aplicados no experimento.

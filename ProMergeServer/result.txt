@@ -1,0 +1,25 @@
+Index: exampleWC-Carlos.Carbonera/A/teste.txt
+===================================================================
+--- exampleWC-Carlos.Carbonera/A/teste.txt	(revision 1)
++++ exampleWC-Carlos.Carbonera/A/teste.txt	(revision 2)
+@@ -0,0 +1,20 @@
++package PrimeiroExperimento;
++
++public class Util {
++
++	public Util() {	
++		//       
++	}
++	
++	public double arredondarValores()
++	{	
++		// IMPORTANTE
++		//  1o Passo - trocar aonde tem '@' pelo par�metro inserido
++		//  2o Passo - Descomentar a linha do c�lculo
++		//  3o Passo - Retornar a vari�vel valorArrend e n�o mais ZERO
++		//double valorArrend = Math.round(@ * 100.0) / 100.0;
++	    return 0;
++	    
++	}
++
++}
